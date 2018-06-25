@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  elasticsearch:
+    container_name: todoes
+    image: elasticsearch:2.2.0
+    ports:
+      - "10200:9200"
+      - "10300:9300"
+    volumes:
+      - todo_es_data:/usr/share/elasticsearch/data
+    environment:
+      ES_HEAP_SIZE: 2g
+
+volumes:
+  todo_es_data:

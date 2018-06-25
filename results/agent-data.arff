@@ -1,0 +1,328 @@
+@relation agent-classify
+
+@attribute word-count-calendar numeric
+@attribute pos-last-tag {<none>,-RRB-,$,NNS,IN,NN,RBR,'\'\'',#,DT,VBP,JJR,PRP,RP,MD,',',.,RB,VBG,:,FW,TO,CC,-LRB-,VBD,WP,WRB,WDT,VBZ,LS,RBS,NNPS,EX,CD,VB,WP$,NNP,SYM,PRP$,JJS,UH,POS,VBN,JJ,PDT}
+@attribute pos-first-tag {<none>,-RRB-,$,NNS,IN,NN,RBR,'\'\'',#,DT,VBP,JJR,PRP,RP,MD,',',.,RB,VBG,:,FW,TO,CC,-LRB-,VBD,WP,WRB,WDT,VBZ,LS,RBS,NNPS,EX,CD,VB,WP$,NNP,SYM,PRP$,JJS,UH,POS,VBN,JJ,PDT}
+@attribute word-count-buy numeric
+@attribute is-question numeric
+@attribute pos-tag-count-adverb numeric
+@attribute word-count-find-service numeric
+@attribute word-count-email numeric
+@attribute similarity-score numeric
+@attribute token-count numeric
+@attribute pos-tag-count-verb numeric
+@attribute pos-tag-count-adjective numeric
+@attribute word-count-contact numeric
+@attribute pos-tag-ratio-noun numeric
+@attribute pos-tag-ratio-adverb numeric
+@attribute word-count-self-improve numeric
+@attribute word-count-school-work numeric
+@attribute word-count-service numeric
+@attribute token-average-length numeric
+@attribute utterance-length numeric
+@attribute pos-tag-count-noun numeric
+@attribute word-count-find-travel numeric
+@attribute pos-tag-count-wh numeric
+@attribute stopword-count numeric
+@attribute sent-count numeric
+@attribute similarity-top-label {pay-bill-online,calendar,call,find-travel,find-service,email,postal,buy,self-improve,print,service,school-work,contact,plan-meal}
+@attribute pos-tag-ratio-verb numeric
+@attribute word-count-postal numeric
+@attribute word-count-pay-bill-online numeric
+@attribute pos-tag-ratio-adjective numeric
+@attribute elected-verb-id numeric
+@attribute word-count-print numeric
+@attribute utterance string
+@attribute word-count-call numeric
+@attribute mention-count numeric
+@attribute pos-tag-ratio-wh numeric
+@attribute word-count-plan-meal numeric
+@attribute agent {pay-bill-online,calendar,call,find-travel,find-service,email,postal,buy,self-improve,print,service,school-work,contact,plan-meal}
+
+@data
+0,NNS,NN,0,0,0,0,0,0.72155,2,0,0,0,1,0,0,0,0,4,9,2,0,0,0,1,pay-bill-online,0,0,0.68,0,1822752074,0,'pay bills',0,0,0,0,pay-bill-online
+0,VBD,NN,0,0,0,0,0,0.394499,2,1,0,0,0.5,0,0,0,0,4,9,1,0,0,0,1,pay-bill-online,0.5,0,0.6,0,1822752074,0,'pay comed',0,0,0,0,pay-bill-online
+0,NN,VB,0,0,0,0,0,0.532605,2,1,0,0,0.5,0,0,0,0,6.5,14,1,0,0,0,1,pay-bill-online,0.5,0,0.64,0,110760,0,'Pay Expression',0,0,0,0,pay-bill-online
+0,-LRB-,VB,0,0,0,0,0,0.454836,7,1,0,0,0.428571,0,0,0,0,3,25,3,0,0,0,2,pay-bill-online,0.142857,0,0.68,0,110760,0,'Pay SF Parking Ticket. :(',0,1,0,0,pay-bill-online
+0,NN,NN,0,0,0,0,0,0.561955,4,0,0,0,1,0,0,0,0,3,15,4,0,0,0,1,pay-bill-online,0,0,0.64,0,1822752074,0,'pay NY tax bill',0,0,0,0,pay-bill-online
+0,NN,NN,0,0,0,0,0,0.700781,2,0,0,0,1,0,0,0,0,5.5,12,2,0,0,0,1,pay-bill-online,0,0,0.64,0,1822752074,0,'pay mortgage',0,0,0,0,pay-bill-online
+0,NN,NN,0,0,0,0,0,0.455481,2,0,0,0,1,0,0,0,0,3,7,2,0,0,0,1,pay-bill-online,0,0,0.6,0,1822752074,0,'pay ATT',0,0,0,0,pay-bill-online
+0,NN,NN,0,0,0,0,0,0.429947,2,0,0,0,1,0,0,0,0,4.5,10,2,0,0,0,1,pay-bill-online,0,0,0.6,0,1822752074,0,'pay roofer',0,0,0,0,pay-bill-online
+0,NNP,VB,0,0,0,0,0,0.392625,2,1,0,0,0.5,0,0,0,0,3.5,8,1,0,0,0,1,pay-bill-online,0.5,0,0.6,0,110760,0,'Pay PG&E',0,0,0,0,pay-bill-online
+0,NNP,VB,0,0,0,0,0,0.383209,2,1,0,0,0.5,0,0,0,0,3,7,1,0,0,0,1,pay-bill-online,0.5,0,0.6,0,110760,0,'Pay BGE',0,0,0,0,pay-bill-online
+0,NN,NN,0,0,0,0,0,0.616068,3,0,0,0,1,0,0,0,0,4.666667,16,3,0,0,0,1,pay-bill-online,0,0,0.64,0,1822752074,0,'pay student loan',0,0,0,0,pay-bill-online
+0,NN,NN,0,0,0,0,0,0.479135,2,0,0,0,1,0,0,0,0,5,11,2,0,0,0,1,pay-bill-online,0,0,0.6,0,1822752074,0,'pay plumber',0,0,0,0,pay-bill-online
+0,NNP,VB,0,0,0,0,0,0.440182,6,1,0,0,0.5,0,0,0,0,4,29,3,0,0,1,1,pay-bill-online,0.166667,0,0.6,0,110760,0,'Pay DMV for Harley before May',0,3,0,0,pay-bill-online
+0,NN,NN,0,0,0,0,0,0.748226,2,0,0,0,1,0,0,0,0,3.5,8,2,0,0,0,1,pay-bill-online,0,0,0.64,0,1822752074,0,'pay rent',0,0,0,0,pay-bill-online
+0,NN,NN,0,0,0,0,0,0.281828,3,0,0,0,1,0,0,0,0,5.666667,19,3,0,0,0,1,pay-bill-online,0,0,0.64,0,1822752074,0,'pay genki violation',0,1,0,0,pay-bill-online
+0,NN,VB,0.133333,0,0,0,0.095238,0.448574,4,1,0,0,0.5,0,0,0,0,4.25,20,2,0,0,1,1,call,0.25,0,0.08,0,102230,0,'get bills on autopay',0,0,0,0,pay-bill-online
+0.147059,NN,NN,0,0,0,0,0,0.481327,6,0,0,0.069767,0.666667,0,0,0,0,5.5,37,4,0,0,1,1,call,0,0,0,0,1822752074,0,'Appointment with capital women\'s care',0,0,0,0,calendar
+0.441176,JJ,VB,0,0,0,0,0,0.45206,7,1,1,0,0.285714,0,0,0,0,6.285714,49,2,0,0,2,1,call,0.142857,0,0,0.142857,-697920873,0,'Schedule appointments with caterers, if necessary',0,0,0,0,calendar
+0.352941,.,VB,0,0,0,0,0,0.433096,24,1,3,0,0.375,0,0,0,0,4.875,133,9,0,0,3,1,call,0.041667,0,0,0.125,-697920873,0,'Schedule rehearsal with officiant, all family members, bridesmaids, best men, wedding planner (if applicable) and other participants.',0,0,0,0,calendar
+0.294118,-RRB-,VB,0,0,0,0,0,0.366983,8,1,0,0,0.375,0,0,0,0,6.625,58,3,0,0,2,1,call,0.125,0,0,0,-697920873,0,'Schedule interviews with photographers (and videographers)',0,0,0,0,calendar
+0.441176,NN,VB,0,0,0,0,0,0.445552,3,1,0,0,0.666667,0,0,0,0,6.333333,21,2,0,0,0,1,plan-meal,0.333333,0,0,0,-697920873,0,'Schedule cake tasting',0,0,0,0,calendar
+0.088235,NN,NNP,0,0,0,0,0,0.412771,2,0,0,0,1,0,0,0,0,8,17,2,0,0,0,1,calendar,0,0,0,0,1822752074,0,'Apple appointment',0,1,0,0,calendar
+0.058824,NNS,VB,0,0,0,0,0,0.516648,12,3,0,0,0.25,0,0,0,0,4.583333,66,3,0,0,5,1,call,0.25,0,0,0,113762,0,'Set a meeting with officiant to go through and confirm the details',0,0,0,0,calendar
+0.529412,NNS,VB,0,0,0,0,0,0.421055,7,1,0,0,0.571429,0,0,0,0,6.571429,52,4,0,0,2,1,pay-bill-online,0.142857,0,0,0,-697920873,0,'Schedule appointments with site managers or caterers',0,0,0,0,calendar
+0.294118,NN,VB,0,0,0,0,0,0.431443,4,2,0,0,0.25,0,0,0,0,5.75,26,1,0,0,0,1,calendar,0.5,0,0,0,-697920873,0,'Schedule one tabling event',0,1,0,0,calendar
+0,NN,VB,0,0,0,0,0,0.373705,14,2,0,0,0.428571,0,0,0,0,4.357143,74,6,0,0,3,1,call,0.142857,0,0,0,-1408204561,0,'Assign maid of honor / one attendant to arrange train and/or veil at altar',0,1,0,0,calendar
+0.058824,NNP,VB,0,0,0,0,0,0.531802,5,1,0,0,0.4,0,0,0,0,4,24,2,0,0,1,1,call,0.2,0,0,0,3304,0,'go over budget with Matt',0,1,0,0,calendar
+0.294118,NNS,VB,0.066667,0,0,0,0,0.449412,7,1,1,0,0.428571,0,0,0,0,5.428571,44,3,0,0,2,1,buy,0.142857,0,0,0.142857,-697920873,0,'Schedule delivery and pickup of rental items',0,0,0,0,calendar
+0.294118,-RRB-,NN,0.111111,0,0,0,0,0.450066,14,1,0,0.069767,0.428571,0,0,0,0,3.571429,59,6,0,0,3,1,call,0.071429,0,0,0,1822752074,0,'Place order for wedding cake (and groom\'s cake, if desired)',0,0,0,0,calendar
+0.529412,NNS,VB,0,0,0,0,0,0.483353,5,1,0,0,0.6,0,0,0,0,7.2,40,3,0,0,1,1,calendar,0.2,0,0,0,-697920873,0,'Schedule appointments with site managers',0,0,0,0,calendar
+0.205882,NN,VB,0,0,0,0,0,0.485166,5,1,0,0,0.6,0,0,0,0,5.8,33,3,0.142857,0,1,1,calendar,0.2,0,0,0,3343854,0,'Make appointment for menu tasting',0,0,0,0.083333,calendar
+0.529412,NNS,VB,0,0,0,0,0,0.405918,5,1,0,0,0.6,0,0,0,0,10.2,55,3,0,0,1,1,calendar,0.2,0,0,0,-697920873,0,'Schedule appointments with site coordinators/officiants',0,0,0,0,calendar
+0,NNP,VB,0.044444,0,0,0,0,0.496192,8,2,0,0.069767,0.375,0,0.090909,0,0.115385,3.875,37,3,0,0,1,1,call,0.25,0.105263,0,0,3440673,0,'Pick up moving truck at 5:30pm Friday',0,1,0,0,calendar
+0.294118,NN,NN,0,0,0,0,0,0.29349,3,0,0,0,1,0,0,0,0,5.333333,18,3,0,0,0,1,call,0,0,0,0,1822752074,0,'schedule DHPP shot',0,1,0,0,calendar
+0,NNP,NNP,0,0,0,0,0,0.300045,5,0,0,0,0.8,0,0,0,0,7.2,40,4,0,0,1,1,service,0,0,0,0,1822752074,0,'Meet with Electric Cheetah/Uncle Cheetah',0,2,0,0,calendar
+0.205882,NNS,VB,0,0,0,0.08,0,0.401357,5,1,0,0,0.6,0,0,0,0,6.2,35,3,0.142857,0,1,1,calendar,0.2,0,0,0,3343854,0,'Make appointments for gown fittings',0,0,0,0,calendar
+0,VBD,NNP,0,0,2,0,0,0.337473,12,3,0,0,0.416667,0.166667,0,0,0,4.75,67,5,0,0,1,1,call,0.25,0,0,0,1822752074,0,'Debrief Constantly \\u2013 Call Brooke and discuss how HHCT III went',0.678571,3,0,0,call
+0,NNP,VB,0,0,0,0,0,0.454765,6,1,0,0,0.666667,0,0,0,0,4,28,4,0,0,0,1,call,0.166667,0,0,0,3045982,0,'Call Phil Smith, Mark Fukuda',0.642857,2,0,0,call
+0,NNP,VB,0,0,0,0,0,0.236103,2,1,0,0,0.5,0,0,0,0,8.5,18,1,0,0,0,1,postal,0.5,0,0,0,-838846263,0,'update address-ATT',0,0,0,0,call
+0,NN,VB,0,0,0,0,0,0.591377,5,2,0,0,0.2,0,0,0,0,3.2,20,1,0,0,1,1,call,0.4,0,0,0,3045982,0,'Call to shut off gas',0.75,0,0,0,call
+0,NN,VB,0,0,0,0,0,0.59916,5,2,0,0,0.2,0,0,0,0,3.6,22,1,0,0,1,1,call,0.4,0,0,0,3045982,0,'Call to shut off water',0.75,0,0,0,call
+0,NN,NN,0,0,0,0,0,0.36377,3,0,0,0,0.666667,0,0,0,0,3.333333,12,2,0,0,1,1,call,0,0,0,0,1822752074,0,'call with tj',0.607143,0,0,0,call
+0,NNS,JJ,0,0,0,0,0,0.329707,7,0,1,0,0.571429,0,0,0,0,5,41,4,0.071429,0,2,1,call,0,0,0,0.142857,1822752074,0,'call city of somerville and genki tenants',0.607143,1,0,0,call
+0,NN,NN,0,0,0,0,0,0.112406,5,0,0,0,1,0,0,0,0,3.8,23,5,0,0,0,1,pay-bill-online,0,0,0.04,0,1822752074,0,'call zacky abt CFB rent',0.607143,1,0,0,call
+0.058824,NN,VB,0,0,0,0,0,0.532414,5,1,0,0.069767,0.6,0,0,0,0,4,23,3,0,0,0,1,call,0.2,0,0,0,3045982,0,'Call John McCain\'s team',0.642857,1,0,0,call
+0,NN,JJ,0,0,0,0,0,0.586275,4,0,1,0,0.75,0,0,0,0,4.75,22,3,0,0,0,1,call,0,0,0,0.25,1822752074,0,'call health care thing',0.642857,0,0,0,call
+0,RB,VB,0,0,1,0,0.095238,0.46121,4,1,0,0,0.5,0.25,0,0,0,4,19,2,0,0,0,1,call,0.25,0,0,0,3045982,0,'Call Greg Sims back',0.642857,1,0,0,call
+0,NNS,NN,0,0,0,0,0,0.558664,5,0,0,0,0.6,0,0,0,0,4.8,28,3,0,0,1,1,call,0,0,0,0,1822752074,0,'call with matt from citizens',0.607143,0,0,0,call
+0,NN,NN,0,0,0,0,0,0.444191,4,0,0,0,0.75,0,0,0,0,5.25,24,3,0,0,0,1,call,0,0,0,0,1822752074,0,'call amazon about kindle',0.607143,1,0,0,call
+0,NN,VB,0,0,0,0.12,0,0.619827,7,3,0,0,0.142857,0,0,0,0.076923,4.142857,35,1,0,0,1,1,call,0.428571,0,0,0,3045982,0,'Call to find out about moving truck',0.607143,0,0,0.083333,call
+0,NNS,NN,0,0,0,0,0,0.302541,2,0,0,0,1,0,0,0,0,8.5,18,2,0,0,0,1,call,0,0,0,0,1822752074,0,'call exterminators',0.607143,0,0,0,call
+0,.,VB,0,0,1,0,0,0.470281,18,3,1,0,0.277778,0.055556,0,0,0,4.444444,94,5,0,0,4,1,call,0.166667,0,0,0.055556,3045982,0,'Call a \"townhall meeting\" at GRBC and personally invite all past/current owners to give input.',0.607143,1,0,0,call
+0,NN,NN,0,0,0,0,0,0.304961,2,0,0,0,1,0,0,0,0,6,13,2,0,0,0,1,call,0,0,0,0,1822752074,0,'call grandmom',0.607143,0,0,0,call
+0,NNS,NN,0,0,0,0,0,0.363489,3,0,0,0,1,0,0,0,0,5.333333,18,3,0,0,0,1,call,0,0,0,0,1822752074,0,'call lesko clients',0.642857,0,0,0,call
+0,CD,VB,0,0,0,0,0,0.336154,6,1,0,0,0.333333,0,0,0,0,2.833333,22,2,0.142857,0,1,1,call,0.166667,0,0,0,3029737,0,'Book a car - dec 13-17',0,2,0,0,find-travel
+0,NNP,VB,0,0,0,0,0,0.337093,5,1,0,0,0.4,0,0,0,0,5,29,2,0.142857,0,2,1,call,0.2,0,0,0,3327647,0,'look at airbnbs in binghamton',0,0,0,0,find-travel
+0.058824,NNP,VB,0,0,0,0,0,0.450885,5,1,0,0,0.6,0,0,0,0,7.4,41,3,0.142857,0,0,1,call,0.2,0,0,0,3343854,0,'make travel arrangements from Albuquerque',0,2,0,0,find-travel
+0,NNS,VB,0,0,0,0,0,0.414428,8,1,1,0,0.5,0,0,0,0,5.125,48,4,0.142857,0,2,1,pay-bill-online,0.125,0,0,0.125,3208383,0,'Hold block of hotel rooms for out-of-town guests',0,0,0,0,find-travel
+0.117647,NN,VB,0,0,0,0,0,0.509584,7,1,0,0,0.571429,0,0,0,0,5.571429,45,4,0.357143,0,1,1,call,0.142857,0,0,0,3343854,0,'Make your hotel reservation for wedding night',0,1,0,0,find-travel
+0,NN,NN,0,0,0,0,0,0.361882,2,0,0,0,1,0,0,0,0,6.5,14,2,0.214286,0,0,1,calendar,0,0,0,0,1822752074,0,'book honeymoon',0,0,0,0,find-travel
+0,NNS,NNP,0,0,0,0,0,0.43187,3,0,0,0,1,0,0,0,0,5.666667,19,3,0.214286,0,0,1,pay-bill-online,0,0,0,0,1822752074,0,'Kansas City tickets',0,1,0,0,find-travel
+0,NN,VB,0.133333,0,0,0,0.095238,0.57803,3,2,0,0,0.333333,0,0,0,0,5,17,1,0,0,0,1,call,0.666667,0,0,0,102230,0,'get return flight',0,0,0,0,find-travel
+0,NNS,VB,0.4,0,0,0,0,0.460225,3,1,0,0,0.666667,0,0,0,0,6.333333,21,2,0.214286,0,0,1,pay-bill-online,0.333333,0,0,0,97926,0,'Buy Nicaragua tickets',0,1,0,0.083333,find-travel
+0.058824,NN,VB,0.044444,0,0,0.2,0,0.4248,19,3,4,0.069767,0.315789,0,0.090909,0,0.461538,5.421053,121,6,0,1,3,1,service,0.157895,0.052632,0,0.210526,3143097,0,'Find professional dry cleaner who specialized in bridal gown care to clean and pack up dress andaccessories after wedding',0,0,0.052632,0.083333,find-service
+0,NN,VB,0,0,0,0.48,0,0.461306,5,1,0,0,0.6,0,0,0,0,5.2,30,3,0,0,1,1,pay-bill-online,0.2,0,0,0,3202804,0,'Hire caterer and sign contract',0,0,0,0,find-service
+0,NNS,NN,0,0,0,0,0,0.334378,3,0,1,0,0.666667,0,0,0,0,8.666667,28,2,0,0,0,1,call,0,0,0,0.333333,1822752074,0,'Interview potential caterers',0,0,0,0,find-service
+0,NN,VB,0,0,0,0.08,0,0.463022,8,1,0,0,0.5,0,0,0,0,3.5,35,4,0,0,2,1,call,0.125,0,0,0,101397,0,'Fix the CD ROM drive on my computer',0,1,0,0,find-service
+0,NN,NN,0,0,0,0.08,0,0.449836,2,0,0,0,1,0,0,0,0,5,11,2,0,0,0,1,service,0,0,0,0,1822752074,0,'repair roof',0,0,0,0,find-service
+0,NN,VB,0,0,0,0.4,0,0.388847,9,1,0,0,0.444444,0,0,0,0,5.555556,56,4,0,0,2,1,call,0.111111,0,0,0,3202804,0,'Hire photographers (and videographers) and sign contract',0,0,0,0,find-service
+0,NN,NN,0,0,0,0,0,0.508423,2,0,0,0,1,0,0,0,0,8,17,2,0,0,0,1,pay-bill-online,0,0,0,0,1822752074,0,'transfer internet',0,0,0,0,find-service
+0,NN,NN,0,0,0,0.08,0,0.372092,4,0,0,0,1,0,0,0,0,5.25,24,4,0,0,0,1,service,0,0,0,0,1822752074,0,'fix coffee pot dispenser',0,0,0,0,find-service
+0,JJ,JJ,0,0,0,0,0,0.417859,2,0,2,0,0,0,0,0,0,7,15,0,0,0,0,1,pay-bill-online,0,0,0,1,1822752074,0,'annual physical',0,1,0,0,find-service
+0,NNS,VB,0,0,0,0,0,0.23797,2,1,0,0,0.5,0,0,0,0,8.5,18,1,0,0,0,1,postal,0.5,0,0,0,1578333328,0,'Notarize documents',0,0,0,0,find-service
+0,NN,VB,0,0,0,0.24,0,0.529937,4,1,1,0,0.5,0,0,0,0,5.25,24,2,0,0,0,1,pay-bill-online,0.25,0,0,0.25,3143097,0,'find new insurance agent',0,1,0,0.083333,find-service
+0,NN,NN,0,0,0,0.08,0,0.515373,4,0,0,0,1,0,0,0,0,5.5,25,4,0,0,0,1,service,0,0,0,0,1822752074,0,'repair laundry room floor',0,0,0,0,find-service
+0,NN,JJ,0,0,0,0.04,0,0.40374,4,0,1,0,0.5,0,0,0,0,5.5,25,2,0,0,1,1,call,0,0,0,0.25,1822752074,0,'sound proofing for office',0,0,0,0,find-service
+0,NNS,VB,0,0,0,0.12,0,0.505132,4,1,1,0,0.5,0,0,0,0,5.5,25,2,0,0,0,1,pay-bill-online,0.25,0,0,0.25,3526264,0,'seek new investment ideas',0,0,0,0,find-service
+0,NNS,VB,0,0,0,0,0,0.50743,4,1,1,0,0.5,0,0,0,0,6.75,30,2,0,0,0,1,pay-bill-online,0.25,0,0.04,0.25,950484197,0,'compare different loan options',0,0,0,0,find-service
+0,NN,VB,0,0,0,0.12,0,0.488852,4,1,1,0,0.25,0,0,0,0,4,19,1,0,0,0,1,call,0.25,0,0,0.25,1957569947,0,'Install my new sink',0,0,0,0,find-service
+0,.,VB,0.066667,0,0,0,0,0.496058,26,5,2,0.069767,0.230769,0,0,0,0,4.192308,134,6,0,0,8,2,call,0.192308,0,0,0.076923,-985656342,0,'Please work on an e-visa with the Cambodian embassy in Vietnam.   I want to consider making you the admin person in our NGO paperwork.',0,3,0,0,find-service
+0,NN,VBP,0,0,0,0.08,0,0.403974,6,3,0,0.069767,0.333333,0,0,0,0,4,29,2,0,0,1,1,service,0.5,0,0,0,1822752074,0,'Have shoes dyed to match gown',0,0,0,0,find-service
+0,NNP,RB,0,0,1,0,0,0.400803,3,0,0,0,0.333333,0.333333,0,0,0,6.333333,21,1,0,0,1,1,pay-bill-online,0,0,0,0,1822752074,0,'Apply to Southxchange',0,1,0,0,find-service
+0,NN,VB,0,0,0,0.12,0,0.380457,3,1,0,0,0.666667,0,0,0,0,5.666667,19,2,0,0,0,1,call,0.333333,0,0,0,3202804,0,'Hire content writer',0,1,0,0,find-service
+0,NN,NNP,0,0,0,0,0,0.479847,3,0,0,0,1,0,0,0,0,6.666667,22,3,0,0,0,1,call,0,0,0,0,1822752074,0,'Home security research',0,0,0,0,find-service
+0,VB,VB,0,0,0,0,0,0.491032,6,2,0,0,0.166667,0,0,0,0,5.166667,36,1,0,0,2,1,call,0.333333,0,0,0,-135762164,0,'Identify office/place for me to live',0,0,0,0.083333,find-service
+0,NNP,VB,0,0,0,0.12,0,0.383697,6,1,0,0,0.5,0,0,0,0,7.166667,48,3,0,0,2,1,call,0.166667,0,0,0,3143097,0,'Find a photographer/marriage counselor in Hawaii',0,1,0,0.083333,find-service
+0.088235,NN,VB,0,0,0,0.52,0,0.459764,10,1,0,0,0.6,0,0,0,0,4.3,50,6,0.142857,0,1,1,call,0.1,0,0,0,3029737,0,'Book site, caterer, sign contract and sign deposit',0,0,0,0,find-service
+0,NN,VB,0.133333,0,0,0,0.095238,0.557692,4,1,0,0,0.5,0,0,0,0,3.75,18,2,0,0,1,1,call,0.25,0,0,0,102230,0,'Get the oil change',0,0,0,0,find-service
+0,NNS,VB,0.133333,0,1,0,0.333333,0.556835,4,1,0,0,0.25,0.25,0,0,0,3.75,18,1,0,0,1,1,call,0.25,0,0,0,102230,0,'get back to emails',0.035714,0,0,0,email
+0,VB,VB,0.133333,0,1,0,0.52381,0.589134,4,2,0,0,0,0.25,0,0,0,3.5,17,0,0,0,1,1,call,0.5,0,0,0,102230,0,'Get back to email',0.035714,0,0,0,email
+0,NN,VB,0,0,0,0,0.52381,0.341097,7,1,0,0,0.714286,0,0,0,0,4.142857,35,5,0,0,1,1,call,0.142857,0.368421,0,0,3526536,0,'send email re pavan and bucket list',0,1,0,0,email
+0,NN,NNP,0,0,0,0,0.333333,0.21851,3,0,0,0,0.666667,0,0,0,0,6.666667,22,2,0,0,0,1,email,0,0,0,0,1822752074,0,'Donate/send 5000 email',0,1,0,0,email
+0,NNS,NN,0,0,0,0,0.333333,0.32776,4,0,0,0,0.75,0,0,0,0,7,31,3,0,0,0,1,call,0,0,0,0,1822752074,0,'email daniel about strawberries',0,1,0,0,email
+0,NNS,NN,0,0,0,0,0.142857,0.16568,2,0,0,0,1,0,0,0,0,8,17,2,0,0,0,1,email,0,0,0,0,1822752074,0,'coffeeshop emails',0,0,0,0,email
+0,NN,VB,0,0,0,0,0.428571,0.40711,5,2,0,0,0.6,0,0,0,0,6.2,35,3,0,0,0,1,call,0.4,0.368421,0,0,3526536,0,'send dana email regarding insurance',0,0,0,0,email
+0,NNS,NN,0,0,0,0,0.333333,0.304026,5,0,0,0,0.8,0,0,0,0,4.4,26,4,0,0,0,1,pay-bill-online,0,0,0,0,1822752074,0,'email myer about fdo taxes',0,0,0,0,email
+0,-RRB-,VB,0,0,0,0,0.285714,0.203246,13,1,1,0,0.461538,0,0,0,0,2.615385,41,6,0,0,0,1,call,0.076923,0,0,0.076923,113399775,0,'write appt emails (BV, UIX, AD mtg, GVSU)',0,3,0,0,email
+0,NNP,NNP,0,0,0,0,0,0.129684,3,0,0,0,1,0,0,0,0,7.333333,24,3,0,0,0,1,call,0,0,0,0,1822752074,0,'Email/Call Dan Strickman',0,1,0,0,email
+0,NN,VB,0,0,0,0,0.333333,0.331475,6,2,0,0,0.5,0,0,0,0,5.333333,37,3,0,0,1,1,call,0.333333,0,0,0,96619420,0,'Email people affected by timezone bug',0,0,0,0,email
+0,NNS,VB,0,0,0,0,0.095238,0.52985,2,1,0,0,0.5,0,0,0,0,7.5,16,1,0,0,0,1,postal,0.5,0.368421,0,0,3526536,0,'Send invitations',0,0,0,0,postal
+0,VBP,VB,0,0,0,0,0.095238,0.501019,3,2,0,0,0.333333,0,0,0,0,5.333333,18,1,0,0,0,1,call,0.666667,0.368421,0,0,3526536,0,'Send prayer update',0,1,0,0,postal
+0,NN,VB,0,0,0,0,0.095238,0.521713,5,1,0,0,0.6,0,0,0,0,4.4,26,3,0,0,1,1,postal,0.2,0.578947,0,0,3526536,0,'send info to credit bureau',0,0,0,0,postal
+0,CD,VB,0,0,0,0,0.095238,0.288142,13,1,0,0,0.461538,0,0,0,0,3.384615,70,6,0,0,1,1,call,0.076923,0.421053,0,0,3526536,0,'Send Abby her shirt at                247 W 15th St. Holland, MI 49423',0,6,0,0,postal
+0,NN,VB,0,0,0,0,0.095238,0.434096,4,1,0,0,0.5,0,0,0,0,4.75,22,2,0,0,1,1,postal,0.25,0.473684,0,0,3526536,0,'send info to appraiser',0,0,0,0,postal
+0,NNP,VB,0,0,0,0,0.095238,0.42222,6,1,0,0,0.5,0,0,0,0.076923,4.666667,33,3,0,0,1,1,call,0.166667,0.421053,0,0,3526536,0,'Send shirts to our Inner Circlers',0,1,0,0,postal
+0,NN,VB,0.044444,0,0,0,0,0.5651,6,1,0,0.069767,0.5,0,0.090909,0,0.115385,3.666667,27,3,0,0,1,1,call,0.166667,0.210526,0,0,3440673,0,'pick up mail at post office',0,0,0,0,postal
+0,NNP,NN,0,0,0,0,0,0.466686,4,0,0,0,0.75,0,0,0,0,5,23,3,0,0,1,1,call,0,0,0,0,1822752074,0,'resend check to Richard',0,1,0,0,postal
+0,NNP,VB,0,0,0,0,0.095238,0.477605,4,1,0,0,0.5,0,0,0,0,4,19,2,0,0,1,1,call,0.25,0.473684,0,0,3526536,0,'Send checks to Joey',0,1,0,0,postal
+0,NNP,NNP,0,0,0,0,0,0.326321,6,0,1,0,0.666667,0,0.090909,0,0,5,34,4,0,0,1,1,pay-bill-online,0,0.210526,0,0.166667,1822752074,0,'Mail nonprofit checks to Kyle!!!!!',0,1,0,0,postal
+0,NNS,NN,0,0,0,0,0,0.559574,2,0,0,0,1,0,0,0,0,6.5,14,2,0,0,0,1,buy,0,0,0,0,1822752074,0,'Business cards',0,0,0,0,buy
+0,NNS,NNP,0.444444,0,0,0,0,0.21031,7,1,0,0,0.571429,0,0,0,0,4.571429,37,4,0,0,0,1,buy,0.142857,0,0,0,1822752074,0,'Tuscon: buy two 1L smartwater bottles',0,2,0,0.083333,buy
+0,NNP,VB,0.4,0,0,0,0,0.522589,2,1,0,0,0.5,0,0,0,0,4,9,1,0,0,0,1,buy,0.5,0,0,0,97926,0,'Buy Scale',0,0,0,0.083333,buy
+0,NNS,NN,0.111111,0,0,0.12,0,0.568073,3,0,1,0,0.666667,0,0,0,0,4.666667,16,2,0,0,0,1,pay-bill-online,0,0.105263,0,0.333333,1822752074,0,'order new checks',0,0,0,0,buy
+0,NNS,VB,0.4,0,0,0,0,0.501987,2,1,0,0,0.5,0,0,0,0,4.5,10,1,0,0,0,1,buy,0.5,0,0,0,97926,0,'Buy gloves',0,0,0,0.083333,buy
+0,VBP,NN,0.111111,0,0,0,0,0.309961,3,1,0,0,0.666667,0,0,0,0,4.333333,15,2,0,0,0,1,pay-bill-online,0.333333,0,0,0,1822752074,0,'order gpa mount',0,0,0,0,buy
+0,NN,VB,0,0,0,0,0,0.455352,4,1,1,0,0.5,0,0,0,0,5.5,25,2,0,0,0,1,call,0.25,0,0,0.25,-1361218025,0,'choose front door fixture',0,0,0,0,buy
+0.058824,NNS,VB,0.133333,0,0,0,0.095238,0.389976,5,2,0,0,0.4,0,0,0,0,3.6,22,2,0,0,0,1,buy,0.4,0,0,0,3304,0,'Go get dirt from lowes',0,0,0,0,buy
+0,NN,NNP,0,0,0,0,0,0.48608,5,0,0,0,0.8,0,0,0,0,5.2,30,4,0,0,1,1,service,0,0,0.04,0,1822752074,0,'Rent a carpet cleaning machine',0,0,0,0,buy
+0,NN,NN,0,0,0,0,0,0.265483,5,0,0,0,0.8,0,0,0,0,6.4,36,4,0,0,1,1,pay-bill-online,0,0,0,0,1822752074,0,'Purchase/make pillow for ring bearer',0,0,0,0,buy
+0.058824,NNP,VB,0.133333,0,0,0,0.095238,0.433438,6,2,0,0,0.5,0,0,0,0.076923,3.666667,27,3,0,0,1,1,buy,0.333333,0,0,0,3304,0,'Go get plants at Tilth Sale',0,1,0,0,buy
+0,NN,VB,0.133333,0,0,0,0.095238,0.524743,3,1,0,0,0.666667,0,0,0,0,6,20,2,0,0,0,1,pay-bill-online,0.333333,0,0,0,102230,0,'Get marriage license',0,0,0,0,buy
+0,NN,JJ,0.444444,0,0,0,0,0.449681,5,0,1,0,0.6,0,0,0,0.076923,5.6,32,3,0,0,1,1,service,0,0,0,0.2,1822752074,0,'Buy mirror for upstairs bathroom',0,0,0,0.083333,buy
+0,NNS,NNP,0.111111,0,0,0,0,0.479031,3,0,1,0,0.666667,0,0,0,0,6,20,2,0,0,0,1,pay-bill-online,0,0,0,0.333333,1822752074,0,'Reserve rental items',0,0,0,0,buy
+0,NNP,VB,0.133333,0,0,0,0.095238,0.55012,4,1,0,0,0.5,0,0,0,0,4,19,2,0,0,1,1,call,0.25,0,0,0,102230,0,'get suit for Boston',0,1,0,0,buy
+0,NN,VB,0,0,0,0,0,0.469299,3,1,0,0,0.333333,0,0,0,0,5,17,1,0,0,1,1,call,0.333333,0,0,0,-522328435,0,'Remember the Milk',0,1,0,0,buy
+0,NN,NN,0.111111,0,0,0,0,0.37984,4,0,0,0,0.75,0,0,0,0,5.75,26,3,0,0,1,1,service,0,0,0,0,1822752074,0,'order a meditation cushion',0,0,0,0,buy
+0,NN,JJ,0.4,0,0,0,0,0.55168,2,0,1,0,0.5,0,0,0,0,3.5,8,1,0,0,0,1,buy,0,0,0,0.5,1822752074,0,'Buy wrap',0,0,0,0.083333,buy
+0,NNS,NN,0,0,0,0,0.333333,0.370768,10,2,0,0,0.5,0,0,0,0,6.2,69,5,0,0,1,1,call,0.2,0,0,0,1822752074,0,'Order/create invitations, call invitees, or compose email invitations',0.607143,0,0,0,buy
+0,NN,NN,0,0,0,0,0,0.459162,5,0,0,0,0.6,0,0,0.090909,0,4.6,27,3,0,0,2,1,call,0,0,0,0,1822752074,0,'paper for the upstairs desk',0,0,0,0,buy
+0,NN,VB,0.044444,0,0,0.16,0,0.476711,4,1,0,0.069767,0.25,0,0.090909,0,0.115385,4,19,1,0,0,1,1,buy,0.25,0.052632,0,0,3530173,0,'Sign up for pottery',0,0,0,0,buy
+0,NN,VB,0.4,0,0,0,0,0.499446,3,1,0,0,0.666667,0,0,0,0,5,17,2,0,0,0,1,buy,0.333333,0,0,0,97926,0,'Buy container mix',0,0,0,0.083333,buy
+0,NN,VB,0.4,0,0,0,0,0.554054,3,1,1,0,0.333333,0,0,0,0,5,17,1,0,0,0,1,buy,0.333333,0,0,0.333333,97926,0,'Buy other jewelry',0,0,0,0.083333,buy
+0,NNS,VB,0.4,0,0,0,0,0.439946,2,1,0,0,0.5,0,0,0,0,5.5,12,1,0,0,0,1,buy,0.5,0,0,0,97926,0,'Buy earrings',0,0,0,0.083333,buy
+0.088235,NN,NN,0.111111,0,0,0,0,0.463207,3,0,0,0,0.666667,0,0,0,0,3.333333,12,2,0,0,1,1,service,0,0,0,0,1822752074,0,'order a cake',0,0,0,0,buy
+0,NN,JJ,0.4,0,0,0,0,0.552242,2,0,1,0,0.5,0,0,0,0,4,9,1,0,0,0,1,pay-bill-online,0,0,0,0.5,1822752074,0,'Buy purse',0,0,0,0.083333,buy
+0,NN,VB,0,0,0,0.28,0,0.47319,6,1,0,0,0.666667,0,0,0,0,5.5,38,4,0.142857,0,1,1,call,0.166667,0,0,0,3029737,0,'Book reception venue and sign contract',0,0,0,0,buy
+0,NN,NNP,0.088889,0,0,0,0,0.355624,4,1,0,0,0.75,0,0,0,0.076923,7.25,32,3,0,0,0,1,service,0.25,0,0,0,1822752074,0,'Research bathroom mirrors online',0,0,0,0,buy
+0,NN,VB,0.4,0,0,0,0,0.438651,2,1,0,0,0.5,0,0,0,0,5.5,12,1,0,0,0,1,buy,0.5,0,0,0,97926,0,'buy necklace',0,0,0,0.083333,buy
+0,NN,NN,0.044444,0,0,0,0,0.388266,5,0,1,0,0.6,0,0,0,0,6.6,37,3,0,0,1,1,buy,0,0,0,0.2,1822752074,0,'subscription to safari library online',0,0,0,0,buy
+0,NNS,VB,0.4,0,0,0,0,0.433738,10,1,1,0,0.6,0,0,0,0,6.5,74,6,0,0,2,1,postal,0.1,0,0,0.1,97926,0,'Buy special postage stamps for invitation envelopes and response envelopes',0,0,0,0.083333,buy
+0,NNS,VB,0,0,0,0,0,0.475226,2,1,0,0,0.5,0,0,0,0,6,13,1,0,0,0,1,service,0.5,0,0,0,1094496948,0,'replace shoes',0,0,0,0,buy
+0,NNS,NN,0,0,0,0,0,0.45605,4,0,0,0,1,0,0,0,0,5.5,25,4,0,0,0,1,call,0,0,0,0,1822752074,0,'research cell phone plans',0,0,0,0,buy
+0,NNS,VB,0.044444,0,0,0,0,0.549679,4,1,1,0.069767,0.25,0,0.090909,0,0.115385,3.75,18,1,0,0,0,1,buy,0.25,0.105263,0,0.25,3440673,0,'Pick up more boxes',0,0,0,0,buy
+0,NN,VB,0.4,0,0,0,0,0.364698,4,1,0,0,0.75,0,0,0,0,6.5,29,3,0,0,0,1,buy,0.25,0,0,0,97926,0,'buy stuff sacks/pack backpack',0,0,0,0.083333,buy
+0,NNS,VB,0.4,0,0,0,0,0.338777,4,1,0,0,0.75,0,0,0,0,5.5,25,3,0,0,0,1,service,0.25,0,0,0,97926,0,'buy flower girl headbands',0,1,0,0.083333,buy
+0,VBN,VB,0.133333,0,0,0,0.095238,0.552758,3,2,0,0,0.333333,0,0,0,0,3.666667,13,1,0,0,0,1,call,0.666667,0,0,0,102230,0,'get keys made',0,0,0,0,buy
+0,NNS,VB,0.4,0,0,0,0,0.472995,3,1,0,0,0.666667,0,0,0,0,6,20,2,0,0,0,1,buy,0.333333,0,0,0,97926,0,'Buy hair accessories',0,0,0,0.083333,buy
+0,NN,JJ,0.4,0,0,0,0,0.386432,4,0,1,0,0.75,0,0,0,0,6,27,3,0,0,0,1,buy,0,0,0,0.25,1822752074,0,'Buy rehearsal dinner outfit',0,0,0,0.083333,buy
+0,NNS,NNP,0.177778,0,0,0,0,0.453556,3,0,0,0,1,0,0,0,0,6.666667,22,3,0,0,0,1,buy,0,0,0,0,1822752074,0,'Order stationery items',0,0,0,0,buy
+0,NNS,NNP,0.111111,0,0,0,0,0.521677,5,0,2,0,0.4,0,0,0,0,6,34,2,0,0,0,1,pay-bill-online,0,0,0,0.4,1822752074,0,'Reserve any necessary rental items',0,0,0,0,buy
+0,NN,VB,0.4,0,0,0,0,0.251512,3,1,1,0,0.333333,0,0,0,0,6.333333,21,1,0,0,0,1,buy,0.333333,0,0,0.333333,97926,0,'Buy going-away outfit',0,0,0,0.083333,buy
+0.088235,-RRB-,NN,0.2,0,1,0,0,0.494411,28,5,0,0.209302,0.285714,0.035714,0,0,0,5.107143,168,8,0,0,8,1,call,0.178571,0,0,0,1822752074,0,'Purchase birdseed/bubbles/rose petals for guests to shower you with as you leave ceremony site (this custom could instead be performed as you depart from the reception)',0,0,0,0,buy
+0.058824,NN,VB,0.133333,0,0,0,0.095238,0.554364,3,1,0,0,0.666667,0,0,0,0,6.333333,21,2,0,0,0,1,pay-bill-online,0.333333,0,0,0,102230,0,'get wedding insurance',0,0,0,0,buy
+0,NN,JJ,0.4,0,0,0,0,0.376219,2,0,1,0,0.5,0,0,0,0,4.5,10,1,0,0,0,1,buy,0,0,0,0.5,1822752074,0,'Buy garter',0,0,0,0.083333,buy
+0,NN,NNP,0.444444,0,0,0,0,0.287136,5,1,0,0,0.6,0,0,0,0,4.6,26,3,0,0,0,1,buy,0.2,0,0,0,1822752074,0,'Tuscon: buy cannister fuel',0,1,0,0.083333,buy
+0.088235,NN,NNP,0,0,0,0,0,0.341863,3,0,0,0,1,0,0,0,0,5.333333,18,3,0,0,0,1,plan-meal,0,0,0,0,1822752074,0,'Select cake topper',0,1,0,0,buy
+0,NNPS,VB,0,0,0,0,0,0.392175,3,1,0,0,0.666667,0,0.181818,0,0,7.666667,25,2,0,0,0,1,call,0.333333,0,0,0,-1405517509,0,'Practice Mandarin Chinese',0,1,0,0,self-improve
+0,NNP,VB,0.044444,0,0,0.16,0,0.570339,4,1,0,0.069767,0.25,0,0.181818,0,0.115385,4,19,1,0,0,1,1,call,0.25,0.052632,0,0,3530173,0,'Sign up for Spanish',0,1,0,0,self-improve
+0,NNP,VB,0,0,0,0,0,0.523105,8,2,0,0,0.25,0,0.454545,0.090909,0,3.875,36,2,0,0,0,1,call,0.25,0,0,0,102846020,0,'Learn about \"Cold Calling\" from Kyle',0,1,0,0,self-improve
+0,NN,VB,0,0,0,0,0,0.188599,3,1,0,0,0.666667,0,0.363636,0.090909,0,9,29,2,0,0,0,1,call,0.333333,0,0,0,102846020,0,'learn guyline knots/technique',0,0,0,0,self-improve
+0,NNP,NN,0,0,0,0,0,0.383775,5,0,1,0,0.6,0,0,0,0,5.8,33,3,0,0,1,1,pay-bill-online,0,0,0,0.2,1822752074,0.538462,'print general giveaways for David',0,1,0,0,print
+0,NNS,NN,0,0,0,0,0,0.406903,2,0,0,0,1,0,0,0,0,4.5,10,2,0,0,0,1,postal,0,0,0,0,1822752074,0.307692,'print maps',0,0,0,0,print
+0,NNS,NN,0,0,0,0,0,0.338348,5,1,0,0,0.6,0,0,0,0,6,34,3,0,0,0,1,pay-bill-online,0.2,0,0,0,1822752074,0.384615,'Print/have fedex cut 300 giveaways',0,1,0,0,print
+0,NNP,VB,0,0,0,0,0,0.259075,3,1,0,0,0.666667,0,0,0,0,5.666667,19,2,0,0,0,1,print,0.333333,0,0,0,106934957,0.384615,'Print Gen. Giveaway',0,0,0,0,print
+0,NN,VB,0.044444,0,0,0,0,0.446648,6,1,0,0.069767,0.5,0,0.090909,0,0.192308,3.5,26,3,0,0,1,1,call,0.166667,0.052632,0,0,113762,0,'Set up org file for garden',0,1,0,0,service
+0,NNS,VB,0,0,1,0,0,0.375183,3,1,0,0,0.333333,0.333333,0,0,0,6.666667,22,1,0,0,0,1,postal,0.333333,0,0,0,-318370553,0,'prepare resupply boxes',0,0,0,0,service
+0,NN,JJ,0,0,0,0,0,0.540102,2,0,1,0,0.5,0,0,0,0.269231,5.5,12,1,0,0,0,1,service,0,0,0,0.5,1822752074,0,'clean closet',0,0,0,0,service
+0,NN,JJ,0,0,0,0,0,0.510607,4,0,1,0,0.5,0,0,0,0.269231,4.25,20,2,0,0,1,1,service,0,0,0,0.25,1822752074,0,'Clean the litter box',0,0,0,0,service
+0,JJ,NN,0,0,1,0,0.095238,0.401124,3,0,1,0,0.333333,0.333333,0,0,0,4.666667,16,1,0,0,0,1,service,0,0,0,0.333333,1822752074,0,'caulk back light',0.035714,0,0,0,service
+0,NN,VB,0,0,0,0,0,0.570174,3,1,1,0,0.333333,0,0,0,0.076923,4.333333,15,1,0,0,0,1,service,0.333333,0,0,0.333333,3432985,0,'Pack spare room',0,0,0,0,service
+0,NN,VB,0,0,0,0,0,0.590655,4,1,0,0,0.25,0,0,0,0.076923,3.25,16,1,0,0,1,1,call,0.25,0,0,0,3552391,0,'Take out the dog',0,0,0,0,service
+0,NN,NN,0,0,0,0,0,0.353338,2,0,0,0,1,0,0,0,0,5.5,12,2,0,0,0,1,service,0,0,0,0,1822752074,0,'glue pumpkin',0,0,0,0,service
+0,NN,JJ,0.044444,0,0,0,0,0.571832,2,0,1,0,0.5,0,0,0,0.346154,6.5,14,1,0,0,0,1,service,0,0,0,0.5,1822752074,0,'clean bathroom',0,0,0,0,service
+0.058824,POS,NNP,0,0,0,0,0,0.387923,6,0,0,0.069767,0.666667,0,0,0,0.076923,4.166667,29,4,0,0,1,1,service,0,0.052632,0,0,1822752074,0,'Iron shirts for Flat lander\'s',0,2,0,0,service
+0,NN,VB,0,0,0,0,0,0.391244,4,1,0,0,0.5,0,0,0,0,3.25,16,2,0,0,1,1,call,0.25,0,0,0,3357649,0,'move the pee pad',0,0,0,0,service
+0,NN,VB,0,0,0,0,0,0.417101,3,1,0,0,0.666667,0,0,0,0,7.333333,24,2,0,0,0,1,call,0.333333,0,0,0,989834062,0,'reconcile bank statement',0,0,0,0,service
+0,NN,VB,0,0,0,0,0,0.319196,4,1,0,0,0.5,0,0,0,0,7.75,34,2,0,0,1,1,service,0.25,0,0,0,1957569947,0,'Install Quicksilver and experiment',0,0,0,0,service
+0,NN,NN,0,0,0,0,0,0.287821,4,0,0,0,0.75,0,0,0,0,5.25,24,3,0,0,0,1,service,0,0,0,0,1822752074,0,'Vacuum hardwoods & couch',0,0,0,0,service
+0,NN,JJ,0,0,0,0,0,0.53992,3,0,1,0,0.333333,0,0,0,0.269231,4.666667,16,1,0,0,1,1,service,0,0,0,0.333333,1822752074,0,'Clean the carpet',0,0,0,0,service
+0,NN,VBN,0.044444,0,0,0,0,0.544621,3,1,0,0.069767,0.333333,0,0.090909,0,0.115385,3,11,1,0,0,0,1,service,0.333333,0.052632,0,0,1822752074,0,'set up tent',0,0,0,0,service
+0,CD,NNS,0,0,0,0,0,0.543524,3,0,0,0,0.333333,0,0,0,0,4,14,1,0,0,1,1,pay-bill-online,0,0,0,0,1822752074,0,'Taxes for 2015',0,1,0,0,service
+0,NNP,NNP,0,0,0,0,0,0.300871,2,0,0,0,1,0,0,0,0,4.5,10,2,0,0,0,1,service,0,0,0,0,1822752074,0,'Wash Mazda',0,2,0,0,service
+0,NN,VBG,0,0,0,0,0,0.394523,4,1,0,0,0.5,0,0,0,0.076923,5.25,24,2,0,0,1,1,service,0.25,0.052632,0,0,1822752074,0,'Ironing shirts for staff',0,0,0,0,service
+0,NN,JJ,0,0,0,0,0,0.543383,5,0,2,0,0.4,0,0,0,0.153846,4.4,26,2,0,0,0,1,service,0,0,0,0.4,1822752074,0,'Clear out small garden bed',0,1,0,0,service
+0,NN,JJ,0.044444,0,0,0,0,0.571832,2,0,1,0,0.5,0,0,0,0.346154,6.5,14,1,0,0,0,1,service,0,0,0,0.5,1822752074,0,'clean bathroom',0,0,0,0,service
+0.058824,NN,VB,0.044444,0,0,0,0,0.549412,7,2,0,0.069767,0.285714,0,0.090909,0,0.115385,3.285714,29,2,0,0,0,1,call,0.285714,0.105263,0,0,3304,0,'Go pick up my son from school',0,0,0,0,service
+0,NNS,NN,0,0,0,0,0,0.372406,3,0,0,0,0.666667,0,0,0.090909,0.076923,6,20,2,0,0,0,1,buy,0,0,0,0,1822752074,0,'figure out bookmarks',0,0,0,0,service
+0,NNS,NN,0,0,0,0,0,0.272831,3,0,0,0,1,0,0,0,0,8,26,3,0,0,0,1,school-work,0,0,0,0,1822752074,0,'review orienteering basics',0,0,0,0,service
+0,NN,JJ,0.044444,0,0,0,0,0.413027,3,0,1,0.069767,0.333333,0,0.090909,0,0.384615,5,17,1,0,0,0,1,service,0,0.052632,0,0.333333,1822752074,0,'clean up woodpile',0,0,0,0,service
+0,NN,VB,0,0,0,0,0,0.563105,2,1,0,0,0.5,0,0,0,0.153846,5.5,12,1,0,0,0,1,service,0.5,0,0,0,3432985,0,'Pack kitchen',0,0,0,0,service
+0,NN,NN,0,0,0,0,0,0.34765,1,0,0,0,1,0,0,0,0,5,5,1,0,0,0,1,call,0,0,0,0,1822752074,0,sweep,0,0,0,0,service
+0,NN,JJ,0,0,0,0,0,0.609302,2,0,1,0,0.5,0,0,0,0.346154,6,13,1,0,0,0,1,service,0,0,0,0.5,1822752074,0,'clean kitchen',0,0,0,0,service
+0,NNS,VB,0,0,0,0,0,0.392565,2,1,0,0,0.5,0,0,0,0,4.5,10,1,0,0,0,1,service,0.5,0,0,0,108302,0,'mop floors',0,0,0,0,service
+0,NN,NN,0,0,0,0,0,0.428761,3,0,0,0,1,0,0,0,0,5,17,3,0,0,0,1,call,0,0,0,0,1822752074,0,'test sleep system',0,0,0,0,service
+0,NNS,NN,0,0,0,0,0,0.456851,4,0,0,0,0.75,0,0,0,0.076923,5.25,24,3,0,0,0,1,service,0,0,0,0,1822752074,0,'household - water plants',0,0,0,0,service
+0,NNS,NNP,0,0,0,0,0,0.472321,3,0,0,0,0.666667,0,0,0,0,4.333333,15,2,0,0,1,1,service,0,0,0,0,1822752074,0,'Wash the dishes',0,1,0,0,service
+0,NNS,VB,0,0,0,0,0,0.357214,2,1,0,0,0.5,0,0,0,0,7.5,16,1,0,0,0,1,service,0.5,0,0,0,1316389283,0,'organize closets',0,0,0,0,service
+0,NN,VB,0,0,0,0,0,0.352519,3,1,0,0,0.666667,0,0,0,0.076923,7,23,2,0,0,0,1,plan-meal,0.333333,0,0,0,-373408302,0,'assemble toiletries kit',0,0,0,0,service
+0,NNS,NN,0,0,1,0,0,0.467128,3,0,0,0,0.666667,0.333333,0,0,0.076923,5,17,2,0,0,0,1,service,0,0,0,0,1822752074,0,'plant more plants',0,0,0,0,service
+0,VB,NN,0,0,0,0,0,0.410962,4,1,0,0,0.5,0,0,0,0,4.75,22,2,0,0,1,1,postal,0.25,0,0,0,1822752074,0,'Upload photos to gmail',0,0,0,0,service
+0,NN,VB,0,0,0,0.08,0,0.406105,3,1,0,0,0.666667,0,0,0,0.076923,5.666667,19,2,0,0,0,1,service,0.333333,0,0,0,-373408302,0,'assemble repair kit',0,0,0,0,service
+0,NN,NN,0,0,0,0,0,0.351172,2,0,0,0,1,0,0,0,0,6,13,2,0,0,0,1,service,0,0,0,0,1822752074,0,'finish mowing',0,0,0,0,service
+0,NN,VB,0,0,0,0,0,0.298758,4,1,0,0,0.75,0,0,0,0,6.5,29,3,0,0,0,1,service,0.25,0,0,0,1094496948,0,'replace humidifier air filter',0,0,0,0,service
+0,NN,NN,0,0,0,0,0,0.335185,8,0,0,0,0.625,0,0,0,0,3.875,38,5,0,0,1,1,call,0,0,0,0,1822752074,0,'household - setup vlc @ term on doctor',0,1,0,0,service
+0,-RRB-,VB,0,0,0,0,0,0.38532,6,1,1,0,0.166667,0,0,0,0,4.666667,31,1,0,0,1,1,call,0.166667,0,0,0.166667,-734452820,0,'Arrange flowers (if applicable)',0,0,0,0,service
+0,NN,VB,0,0,0,0,0,0.472153,4,1,1,0,0.25,0,0,0,0.076923,5,23,1,0,0,0,1,service,0.25,0,0,0.25,94001407,0,'Break out concrete slab',0,0,0,0,service
+0,'\'\'',JJ,0.133333,0,0,0,0.095238,0.582737,14,4,1,0,0,0,0.181818,0.272727,0,2.785714,47,0,0,0,3,1,call,0.285714,0,0,0.071429,102846020,0,'complete \"Learn by Doing\" and \"Did I get this?\"',0,0,0,0,school-work
+0,NN,VB,0,0,0,0,0,0.450248,3,1,0,0,0.666667,0,0,0.090909,0,6.333333,21,2,0,0,0,1,plan-meal,0.333333,0,0,0,113399775,0,'write nutrition paper',0,0,0,0,school-work
+0,CD,NN,0,0,0,0,0,0.137812,2,0,0,0,0.5,0,0,0.090909,0,1.5,4,1,0,0,0,1,postal,0,0,0,0,1822752074,0,'HW 1',0,2,0,0,school-work
+0,NNS,NN,0,0,0,0,0,0.387932,3,0,0,0,0.666667,0,0,0.181818,0.076923,6,20,2,0,0,0,1,call,0,0,0,0,1822752074,0,'figure out Footnotes',0,0,0,0,school-work
+0,CD,NNP,0,0,0,0,0,0.265165,3,0,0,0,0.666667,0,0,0.181818,0,4.666667,16,2,0,0,0,1,call,0,0,0,0,1822752074,0,'Read Modules 1-4',0,2,0,0,school-work
+0,NN,NN,0,0,0,0,0,0.380167,1,0,0,0,1,0,0,0.181818,0,4,4,1,0,0,0,1,school-work,0,0,0,0,1822752074,0,Quiz,0,0,0,0,school-work
+0,NN,NN,0,0,0,0,0,0.305451,2,0,0,0,1,0,0,0.181818,0,6,13,2,0,0,0,1,school-work,0,0,0,0,1822752074,0,'syllabus quiz',0,0,0,0,school-work
+0,NNP,VB,0,0,0,0,0,0.422694,8,1,0,0,0.5,0,0,0,0,4.5,42,4,0,0,1,2,call,0.125,0,0,0,93029230,0,'Apply for Grad. Student assistance from UM',0,1,0,0,school-work
+0.088235,NN,VB,0,0,0,0,0,0.391976,6,1,1,0,0.5,0,0,0,0,6.333333,43,3,0,0,1,1,call,0.166667,0,0,0.166667,-308949343,0,'Provide final headcount to site coordinator',0,0,0,0,contact
+0.117647,'\'\'',NN,0,0,0,0,0,0.421594,14,0,0,0.255814,0.571429,0,0,0,0,4.142857,67,8,0,0,2,1,call,0,0,0,0,1822752074,0,'Contact Stella\'s staff on interest for \"Stella\'s Super Mario Party\"',0,2,0,0,contact
+0,NNP,VB,0,0,0,0,0,0.444832,3,1,0,0,0.666667,0,0,0,0,7,23,2,0,0,0,1,pay-bill-online,0.333333,0,0,0,-1367724422,0,'Cancel Comcast Internet',0,1,0,0,contact
+0,.,VB,0,0,0,0,0.047619,0.500195,14,3,0,0.325581,0.285714,0,0,0,0,3.857143,66,4,0,0,6,1,call,0.214286,0,0,0,96889,0,'Ask KFB for list of restaurants they have worked with in the past.',0,2,0,0,contact
+0,NN,VB,0,0,0,0,0,0.46772,5,1,0,0,0.6,0,0,0,0,5.8,33,3,0,0,1,1,pay-bill-online,0.2,0,0,0,-1367724422,0,'cancel renters insurance with AAA',0,0,0,0,contact
+0,NNS,NN,0,0,0,0,0,0.624689,4,0,1,0,0.5,0,0,0,0,4,19,2,0,0,1,1,call,0,0,0,0.25,1822752074,0,'Talk to few lawyers',0,0,0,0,contact
+0,NNP,VB,0,0,0,0,0,0.377999,7,2,0,0.093023,0.285714,0,0,0,0,3.285714,29,2,0,0,2,1,buy,0.285714,0,0,0,96889,0,'Ask IC to recommend us to ILG',0,0,0,0,contact
+0,NNS,RB,0,0,1,0,0,0.338006,3,0,0,0.348837,0.333333,0.333333,0,0,0,7.666667,25,1,0,0,1,1,plan-meal,0,0,0,0,1822752074,0,'Followup with restaurants',0,0,0,0,contact
+0,NNS,NN,0,0,0,0,0,0.534252,7,0,0,0.116279,0.571429,0,0,0,0,4.571429,38,4,0,0,2,1,call,0,0,0,0,1822752074,0,'Share contact numbers with at 2 people',0,2,0,0,contact
+0,NN,NN,0,0,0,0,0,0.547899,4,0,0,0,0.75,0,0,0,0,4.75,22,3,0,0,1,1,call,0,0,0,0,1822752074,0,'change address at bank',0,0,0,0,contact
+0,NNP,NN,0,0,0,0,0,0.59759,3,0,0,0,0.666667,0,0,0,0,3.333333,12,2,0,0,1,1,call,0,0,0,0,1822752074,0,'talk to Mike',0,1,0,0,contact
+0,NNS,VB,0,0,1,0,0.095238,0.503746,52,8,4,0.093023,0,0.019231,0,0,0,5.134615,312,0,0.142857,0,11,1,call,0.153846,0.368421,0,0.076923,3526536,0,'Send hotel and transportation information to out-of-town guests, include directions from local airorts and cities from which many guests will be arriving by car, information (description, location, phone number) and any code or name that must be mentioned to receive discounted rate when making room reservations',0,0,0,0,contact
+0,NNS,NNP,0,0,0,0,0,0.007582,3,0,0,0,1,0,0,0,0,5.666667,19,3,0,0,0,1,plan-meal,0,0,0,0,1822752074,0,'Ann Arbor followups',0,1,0,0,contact
+0.147059,-RRB-,VB,0.111111,0,0,0,0,0.451727,20,4,2,0.302326,0.25,0,0.090909,0,0.115385,4.45,106,5,0,0,5,1,call,0.2,0.052632,0,0.1,96889,0,'Ask caterer/coordinator to have top teir of wedding cake packed up for you (to save for first anniversary)',0,1,0,0,contact
+0,NNS,RB,0,0,1,0,0,0.249358,4,0,0,0.348837,0.5,0.25,0,0,0,6.25,28,2,0,0,1,1,plan-meal,0,0,0,0,1822752074,0,'Followup with GR restaurants',0,0,0,0,contact
+0,NN,NN,0,0,0,0,0,0.347091,7,0,0,0,0.857143,0,0,0,0,3.571429,31,6,0,0,1,1,call,0,0.052632,0,0,1822752074,0,'touch base w judy on WF account',0,1,0,0,contact
+0,NNS,NNP,0,0,0,0,0,0.43704,4,0,0,0.162791,0.5,0,0,0,0,5.75,26,2,0,0,1,1,call,0,0,0,0,1822752074,0,'Outreach to 10 restaurants',0,1,0,0,contact
+0.088235,NNS,VB,0,0,0,0,0,0.534035,9,1,0,0,0.666667,0,0,0,0,5.888889,61,6,0,0,1,1,call,0.111111,0,0,0,3173137,0,'Give site coordinator arrival times for all service providers',0,0,0,0,contact
+0,NNP,VB,0,0,0,0,0.095238,0.314994,5,2,0,0,0.4,0,0,0,0,5.8,33,2,0,0,1,1,call,0.4,0.368421,0,0,3526536,0,'send updated financials to Armand',0,1,0,0,contact
+0,NN,RB,0,0,1,0,0,0.362459,12,0,0,0.418605,0.5,0.083333,0,0,0,4.833333,68,6,0,0,3,1,call,0,0,0,0,1822752074,0,'Followup with Jenny at KFB about the restaurants\' promo request form',0,2,0,0,contact
+0,-RRB-,VB,0,0,0,0,0,0.383837,9,1,1,0,0.333333,0,0,0,0,5.888889,59,3,0,0,2,1,call,0.111111,0,0,0.111111,951117504,0,'Confirm final details with photographer (and videographers)',0,0,0,0,contact
+0,JJ,NN,0,0,0,0,0,0.435008,4,0,1,0.069767,0.5,0,0,0,0,5.5,25,2,0,0,1,1,pay-bill-online,0,0,0,0.25,1822752074,0,'request permit for aframe',0,0,0,0,contact
+0,NNS,RB,0.066667,0,1,0,0,0.555731,10,2,0,0.069767,0.1,0.1,0,0,0,3.9,48,1,0,1,4,1,call,0.2,0,0,0,1822752074,0,'Inquire as to what you need to bring to fittings',0,0,0.1,0,contact
+0,NNS,RB,0,0,1,0,0,0.302937,4,0,0,0.186047,0.5,0.25,0,0,0,7.5,33,2,0,0,1,1,plan-meal,0,0,0,0,1822752074,0,'Followup with restaurant invoices',0,0,0,0,contact
+0,VB,RB,0,0,1,0,0,0.360939,4,1,0,0.186047,0.25,0.25,0,0,0,5.5,25,1,0,0,1,1,call,0.25,0,0,0,108399245,0,'Followup with World Renew',0,1,0,0,contact
+0,NNS,VB,0,0,0,0,0,0.403412,7,1,0,0,0.571429,0,0,0,0.076923,5.714286,46,4,0,0,1,1,call,0.142857,0,0,0,108386675,0,'Reach out to Seattle restaurant coalition orgs',0,1,0,0,contact
+0,NN,NN,0,0,0,0,0,0.616193,2,0,0,0,1,0,0,0,0,6.5,14,2,0,0,0,1,call,0,0,0,0,1822752074,0,'change address',0,0,0,0,contact
+0,NN,NN,0,0,0,0,0,0.408012,7,0,0,0.116279,0.714286,0,0,0,0,4.857143,40,5,0,0,1,1,call,0,0,0,0,1822752074,0,'Contact Mars Hill about HQ and marketing',0,1,0,0,contact
+0,NN,VB,0,0,0,0,0,0.34723,7,1,1,0,0.428571,0,0,0,0,5.571429,45,3,0,0,2,1,call,0.142857,0,0,0.142857,1671386080,0,'Discuss bustle style of train with seamstress',0,0,0,0,contact
+0,NNS,RB,0,0,1,0,0,0.191724,4,0,0,0.186047,0.5,0.25,0,0,0,6,27,2,0,0,1,1,call,0,0,0,0,1822752074,0,'Followup with National NPOs',0,1,0,0,contact
+0.088235,.,VB,0.111111,0,0,0,0,0.456944,11,3,0,0.302326,0.272727,0,0.090909,0,0.115385,4.818182,62,3,0,0,2,1,call,0.272727,0.052632,0,0,96889,0,'Ask caterer/coordinator to have cake topper packed up for you.',0,1,0,0,contact
+0,NN,VB,0,0,0,0,0,0.373331,11,1,1,0.162791,0.454545,0,0,0,0,4.545455,58,5,0,0,2,1,call,0.090909,0,0,0.090909,-1183699191,0,'Invite restaurants (and NPOs) to Patagonia event next week',0,3,0,0,contact
+0.088235,NN,RB,0,0,1,0,0,0.360547,7,0,1,0,0.571429,0.142857,0,0,0,6.142857,49,4,0,0,1,1,call,0,0,0,0.142857,1822752074,0,'Tally final guest count with site manager/caterer',0,1,0,0,contact
+0,NNS,VB,0,0,0,0,0,0.425146,6,1,0,0,0.666667,0,0,0,0,4.833333,33,4,0,0,0,1,buy,0.166667,0,0,0,-734452820,0.307692,'Arrange print run: giveaway cards',0,0,0,0,contact
+0,NNS,RB,0,0,1,0,0,0.370813,4,0,1,0.44186,0.25,0.25,0,0,0,7,31,1,0,0,1,1,call,0,0,0,0.25,1822752074,0,'Followup with Local Restaurants',0,1,0,0,contact
+0,RP,VB,0.111111,0,1,0,0,0.505248,18,3,1,0.069767,0.277778,0.055556,0.090909,0,0.115385,4.833333,102,5,0,0,3,1,call,0.166667,0.052632,0,0.055556,951117504,0,'Confirm with your rental company all details, times, and sites where items must be delivered/picked up',0,0,0,0,contact
+0,NN,JJ,0,0,0,0,0,0.134104,3,0,1,0.27907,0.666667,0,0,0,0,7.666667,25,2,0,0,0,1,calendar,0,0,0,0.333333,1822752074,0,'Local Restuarant followup',0,0,0,0,contact
+0,NN,NN,0,0,0,0,0,0.468541,4,0,0,0.069767,0.75,0,0,0,0,5.75,26,3,0,0,1,1,pay-bill-online,0,0,0,0,1822752074,0,'request permit for signage',0,0,0,0,contact
+0,NN,NN,0,0,0,0,0,0.265873,2,0,0,0,1,0,0,0,0,7,15,2,0.142857,0,0,1,school-work,0,0,0,0,1822752074,0,'book babysitter',0,0,0,0,contact
+0,NNP,JJ,0,0,0,0,0,0.345547,3,0,1,0,0.333333,0,0,0,0,6.333333,21,1,0,0,1,1,call,0,0,0,0.333333,1822752074,0,'Follow-up with Monica',0,1,0,0,contact
+0,NNP,NN,0,0,0,0,0,0.269166,6,1,0,0.116279,0.833333,0,0,0,0,7.666667,51,5,0,0,0,1,call,0.166667,0,0,0,1822752074,0,'Contact student orgs regarding Storyteller Rotation',0,1,0,0,contact
+0.058824,NN,NN,0,0,0,0,0,0.484375,10,1,1,0.27907,0.6,0,0,0,0,5.3,61,6,0,0,1,1,call,0.1,0,0,0.1,1822752074,0,'Contact local town clerk\'s office to arrange marriage license',0,0,0,0,contact
+0,NNS,NNP,0,0,0,0,0,0.13676,2,0,0,0,1,0,0,0,0,7,15,2,0,0,0,1,email,0,0,0,0,1822752074,0,'Press Followups',0,1,0,0,contact
+0,NNS,VB,0,0,0,0.12,0,0.523948,4,2,1,0,0.25,0,0,0,0,6,27,1,0,0,0,1,plan-meal,0.5,0,0,0.25,3143097,0,'find healthy baking recipes',0,0,0,0.5,plan-meal
+0,NN,NN,0,0,0,0,0,0.558769,2,0,0,0,1,0,0,0,0,5.5,12,2,0,0,0,1,plan-meal,0,0,0,0,1822752074,0,'package food',0,0,0,0.166667,plan-meal
+0,NNS,VB,0.4,0,0,0,0,0.546718,2,1,0,0,0.5,0,0,0,0,7,15,1,0,0,0,1,buy,0.5,0,0,0,97926,0,'buy ingredients',0,0,0,0.083333,plan-meal
+0,NN,VB,0,0,0,0,0,0.54952,6,1,0,0,0.5,0,0,0,0,4.5,32,3,0,0,2,1,call,0.166667,0,0,0,109757538,0,'start meal planning for the week',0,1,0,0.083333,plan-meal
+0,NN,NNP,0,0,0,0,0,0.495266,2,0,0,0,1,0,0,0,0,4,9,2,0,0,0,1,plan-meal,0,0,0,0,1822752074,0,'Plan menu',0,0,0,0.083333,plan-meal
+0,NNS,VB,0,0,0,0,0,0.402051,4,1,0,0,0.5,0,0,0,0,6,27,2,0,0,0,1,plan-meal,0.25,0,0,0,-135762164,0,'identify 4-6 dinner recipes',0,1,0,0.333333,plan-meal
+0,NNS,NN,0,0,0,0,0,0.466517,3,0,0,0,1,0,0,0,0,5,17,3,0,0,0,1,plan-meal,0,0,0,0,1822752074,0,'test cook recipes',0,0,0,0.25,plan-meal
+0,NN,VB,0,0,0,0,0,0.595039,3,1,0,0,0.666667,0,0,0,0,4,14,2,0,0,0,1,pay-bill-online,0.333333,0,0.64,0,110760,0,'pay bills',0,0,0,0,pay-bill-online
+0.294118,NN,VB,0,0,0,0,0,0.440004,5,2,0,0,0.4,0,0,0,0,7.2,40,2,0,0,1,1,calendar,0.4,0,0,0,-697920873,0,'pay comed',0,0,0,0,calendar
+0.441176,NNS,VB,0,0,0,0,0,0.390764,5,1,1,0,0.4,0,0,0,0,6.8,38,2,0,0,1,1,calendar,0.2,0,0,0.2,-697920873,0,'Pay Expression',0,0,0,0,calendar
+0,NNS,NN,0,0,0,0,0,0.556596,6,1,0,0,0.666667,0,0,0,0,3.5,25,4,0,0,0,1,call,0.166667,0,0,0,1822752074,0,'Pay SF Parking Ticket. :(',0.607143,0,0,0,call
+0.058824,NNP,VB,0,0,0,0,0,0.413226,5,1,0,0,0.6,0,0,0,0,6.6,37,3,0.142857,0,1,1,call,0.2,0,0,0,3343854,0,'pay NY tax bill',0,2,0,0,find-travel
+0.058824,NN,VB,0,0,0,0.12,0,0.407804,3,1,0,0,0.666667,0,0,0,0,7,23,2,0,0,0,1,pay-bill-online,0.333333,0,0,0,3202804,0,'pay mortgage',0,0,0,0,find-service
+0,NN,VB,0,0,0,0,0,0.164861,2,1,0,0,0.5,0,0,0,0,6.5,14,1,0.142857,0,0,1,plan-meal,0.5,0,0,0,3029737,0,'pay ATT',0,0,0,0,find-service
+0,-RRB-,NN,0,0,0,0,0,0.468084,13,1,0,0.116279,0.461538,0,0,0,0,3.615385,56,6,0.071429,0,3,1,call,0.076923,0,0,0,1822752074,0,'pay roofer',0,4,0,0,email
+0,NN,NNP,0,0,0,0,0,0.476222,6,0,0,0,0.666667,0,0,0,0,4,29,4,0,0,2,1,call,0,0.105263,0,0,1822752074,0,'Pay PG&E',0,1,0,0,postal
+0,NN,VB,0.133333,0,1,0,0.095238,0.549757,3,1,0,0,0.333333,0.333333,0,0,0,3.666667,13,1,0,0,0,1,service,0.333333,0,0,0,102230,0,'Pay BGE',0,0,0,0,buy
+0.088235,NN,VB,0,0,0,0.28,0,0.519077,8,1,0,0,0.5,0,0,0,0,4.375,42,4,0.142857,0,3,1,call,0.125,0,0,0,3029737,0,'pay student loan',0,0,0,0,buy
+0,NNS,VB,0.4,0,0,0,0,0.432272,4,1,1,0,0.5,0,0,0,0,4.75,22,2,0,0,0,1,pay-bill-online,0.25,0,0,0.25,97926,0,'pay plumber',0,0,0,0.083333,buy
+0,NN,NN,0,0,0,0,0,0.3462,6,0,0,0,0.5,0,0,0,0,5,35,3,0,0,1,1,pay-bill-online,0,0,0,0,1822752074,0,'Pay DMV for Harley before May',0,1,0,0,buy
+0,NN,VB,0,0,0,0,0,0.419855,25,5,1,0,0.36,0,0,0,0,4.8,141,9,0,0,5,1,call,0.2,0,0,0.04,-1164222250,0,'pay rent',0,1,0,0,buy
+0.058824,JJ,VB,0,0,0,0,0,0.415902,5,1,1,0,0.4,0,0,0,0,4.8,28,2,0.142857,0,1,1,service,0.2,0,0,0.2,3343854,0,'pay genki violation',0,0,0,0,service
+0,NN,NN,0,0,0,0.08,0,0.430786,2,0,0,0,1,0,0,0,0,5,11,2,0,0,0,1,postal,0,0,0,0,1822752074,0,'get bills on autopay',0,0,0,0,service
+0.058824,PRP,VB,0,0,0,0.12,0,0.525956,14,3,0,0,0.428571,0,0,0,0.076923,4.285714,73,6,0,0,5,1,call,0.214286,0,0,0,-373408302,0,'Appointment with capital women\'s care',0,1,0,0.083333,service
+0,NN,VB,0,0,0,0,0,0.409282,4,1,1,0,0.5,0,0,0,0.076923,4.75,22,2,0,0,0,1,buy,0.25,0,0,0.25,-373408302,0,'Schedule appointments with caterers, if necessary',0,1,0,0,service
+0,NNS,VB,0,0,0,0,0.095238,0.450443,8,3,0,0,0.5,0,0,0,0,5,47,4,0,0,1,1,call,0.375,0.368421,0,0,3526536,0,'Schedule rehearsal with officiant, all family members, bridesmaids, best men, wedding planner (if applicable) and other participants.',0,0,0,0,contact
+0,NN,VB,0,0,0,0,0,0.558463,5,1,1,0,0.2,0,0,0,0,5.2,30,1,0,0,1,1,call,0.2,0,0,0.2,109641682,0,'Schedule interviews with photographers (and videographers)',0,1,0,0,contact
+0,NNS,VB,0,0,0,0,0,0.404537,5,1,0,0,0.4,0,0,0,0,6.6,37,2,0,0,1,1,call,0.2,0.105263,0,0,951351530,0,'Schedule cake tasting',0,0,0,0,contact
+0,CD,VB,0,0,0,0,0,0.474516,7,1,0,0.093023,0.428571,0,0,0,0,3.857143,33,3,0,0,1,1,call,0.142857,0,0,0,96889,0,'Apple appointment',0,3,0,0,contact

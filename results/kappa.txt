@@ -1,0 +1,18 @@
+[1] "cohen:"
+Call: cohen.kappa1(x = x, w = w, n.obs = n.obs, alpha = alpha, levels = levels)
+
+Cohen Kappa and Weighted Kappa correlation coefficients and confidence boundaries 
+                 lower estimate upper
+unweighted kappa  0.42     0.51  0.60
+weighted kappa    0.47     0.62  0.77
+
+ Number of subjects = 145 
+[1] "fleiss:"
+ Fleiss' Kappa for m Raters
+
+ Subjects = 145 
+   Raters = 2 
+    Kappa = 0.498 
+
+        z = 14.1 
+  p-value = 0 

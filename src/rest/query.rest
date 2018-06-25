@@ -1,0 +1,100 @@
+# get all indexes
+GET http://localhost:10200/_cat/indices?v
+
+# careful!
+#DELETE http://localhost:10200/todo
+
+# mapping
+GET http://localhost:10200/todo/dataset/_mapping
+
+# count
+POST http://localhost:10200/todo/dataset/_search
+{
+    "query": { "match_all": {}},
+    "size": 0
+}
+
+# distribution
+POST http://localhost:10200/todo/dataset/_search
+{
+    "aggs": {
+        "act_agg_name": {
+	    "terms": {"field": "class-label", "size": 0}
+        }
+    },
+    "size": 0
+}
+
+# search
+POST http://localhost:10200/todo/dataset/_search
+{
+    "query": { "match_all": {}},
+    "size": 1
+}
+
+# act by class
+POST http://localhost:10200/todo/dataset/_search
+{
+    "query": {
+        "term": {"class-label": "self-improve"}
+   },
+   "size": 5
+}
+
+# act by class
+POST http://localhost:10200/todo/dataset/_search
+{
+    "query": {
+        "term": {"class-label": "self-improve"}
+   },
+   "fields": ["class-label"],
+   "size": 5
+}
+
+# counts
+POST http://localhost:10200/todo/dataset/_search
+{
+    "query": { "match_all": {}},
+    "size": 0
+}
+
+# just keys
+POST http://localhost:10200/todo/dataset/_search
+{
+    "query": { "match_all": {}},
+    "fields": []
+}
+
+# search for text
+POST http://localhost:10200/todo/dataset/_search
+{
+    "query": {
+      "match": {"_all": "office"}
+    },
+    "size": 1
+}
+
+## stats
+GET http://localhost:10200/todo/stats/_search
+{
+    "query": { "match_all": {}},
+    "from": 0
+}
+
+
+
+## stats (test/train splits)
+# stats mapping
+GET http://localhost:10200/todo/stats/_mapping
+
+# stats--fix this
+POST http://localhost:10200/todo/stats/_search
+{
+    "query": { "match_all": {}}
+}
+
+# stats
+POST http://localhost:10200/todo/stats/_search
+{
+    "query": { "match_all": {}}
+}
