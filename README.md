@@ -40,12 +40,12 @@ This repository contains:
 
 * [Corpus]
 * [Paper on arXiv] (please [cite](#citation) this paper)
-* [Paper](doc/SupervisedInterpretationImperativeToDos.pdf) (please do **not**
+* [Paper](https://plandes.github.io/todo-task/SupervisedInterpretationImperativeToDos.pdf) (please do **not**
   cite this paper).
-* [Slides](doc/SupervisedInterpretationImperativeToDosSlides.pdf)
+* [Slides](https://plandes.github.io/todo-task/SupervisedInterpretationImperativeToDosSlides.pdf)
 * [Evaluation](results/full-evaluation.xls) (generated using
   the [evaluation functionality](#test-evaluation))
-* [Predictions](results/predictions.xls) (generated using
+* [Predictions](results/predictions.csv) (generated using
   the [predictions functionality](#predictions))
 
 
@@ -235,7 +235,7 @@ make predict
 ```
 
 This will generate a `predictions.csv` file.  The file this process generates
-is [here](results/predictions.xls).
+is [here](results/predictions.csv).
 
 
 ### Off-line Tests
