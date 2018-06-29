@@ -348,9 +348,9 @@ SOFTWARE.
 
 
 <!-- links -->
-[A Supervised Approach To The Interpretation Of Imperative To-Do Lists]: https://arxiv.org/abs/1806.07999
-[arXiv paper]: https://arxiv.org/abs/1806.07999
-[Paper on arXiv]: https://arxiv.org/abs/1806.07999
+[A Supervised Approach To The Interpretation Of Imperative To-Do Lists]: https://arxiv.org/pdf/1806.07999
+[arXiv paper]: https://arxiv.org/pdf/1806.07999
+[Paper on arXiv]: https://arxiv.org/pdf/1806.07999
 [*Corpus B*]: resources/corpus.xlsx
 [Corpus]: resources/corpus.xlsx
 
